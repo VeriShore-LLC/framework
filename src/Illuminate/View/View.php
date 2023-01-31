@@ -467,7 +467,7 @@ class View implements ArrayAccess, Htmlable, ViewContract
             ));
         }
 
-        return $this->with(Str::camel(substr($method, 4)), $parameters[0]);
+        return $this->with(Str::snake(substr($method, 4)), $parameters[0]);
     }
 
     /**
